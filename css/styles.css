@@ -1,16 +1,74 @@
+/* CSS Reset (modern, minimal) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+/* Set base box-sizing */
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 1.7;
+	background: #fff;
+	color: #1a202c;
+	font-size: 1.125rem;
+	font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+	min-height: 100vh;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+main, section, header, footer, nav {
+	box-sizing: border-box;
+}
+
+/* Improved heading and section spacing */
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	color: #111;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+section {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+}
+
+main > section:first-of-type {
+	margin-top: 0;
+}
+
+/* Tailwind and custom focus/contrast styles remain below */
 
 /* Atkinson Hyperlegible font fallback and accessibility improvements */
-html {
-	font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
-	background-color: #fff;
-	color: #1a202c;
-}
 
-body {
-	font-size: 1.125rem;
-	line-height: 1.7;
-	letter-spacing: 0.01em;
-}
 
 a {
 	color: #2563eb;
@@ -39,7 +97,7 @@ button, [href], input, select, textarea {
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
+	html, body {
 		background-color: #18181b;
 		color: #f3f4f6;
 	}

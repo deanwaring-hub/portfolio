@@ -35,22 +35,38 @@
         <a href="#main-content" class="sr-only focus:not-sr-only absolute left-4 top-4 z-50 bg-blue-700 text-white px-4 py-2 rounded shadow transition-all" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">Skip to main content</a>
 
         <!-- Header with Navigation -->
-        <header class="w-full bg-white/90 shadow-md border-b border-blue-100 sticky top-0 z-30" aria-label="Site header">
-            <nav class="max-w-3xl mx-auto flex items-center justify-between px-4 py-3" aria-label="Main navigation">
-                <div class="flex items-center gap-2">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-tr from-blue-400 to-emerald-400 shadow-md border-2 border-white mr-2">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </span>
-                    <span class="text-xl font-extrabold tracking-tight text-gray-900" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">Dean Waring</span>
-                </div>
-                <ul class="flex gap-6 text-base font-semibold" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">
-                    <li><a href="#about-heading" class="relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">About</a></li>
-                    <li><a href="#aws-arch-heading" class="relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">AWS Setup</a></li>
-                    <li><a href="#projects-heading" class="relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Projects</a></li>
-                    <li><a href="#skills-heading" class="relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Skills</a></li>
-                    <li><a href="#cta-heading" class="relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Contact</a></li>
-                </ul>
+        <header class="w-full bg-white/90 shadow-md border-b border-blue-100 sticky top-0 z-30 px-0" aria-label="Site header">
+            <nav class="w-full flex flex-col items-center sm:flex-row sm:items-center sm:justify-between px-3 sm:px-6 py-2 sm:py-3 min-w-[320px]" aria-label="Main navigation">
+                <div class="w-full flex items-center justify-between sm:w-auto px-0 py-0 min-h-0 gap-0.5" style="min-height:0; position:relative;">
+                    <img src="images/LogoSmall.svg" alt="Dean Waring Logo" class="w-[120px] h-[120px] object-contain" style="min-width:120px; min-height:120px;" />
+                    <div class="flex-1 flex flex-col items-center justify-center text-center">
+                        <span class="text-base sm:text-xl font-extrabold tracking-tight text-gray-900 leading-tight" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">Dean<br>Waring</span>
+                    </div>
+                    <button id="nav-toggle" class="sm:hidden w-12 h-12 flex items-center justify-center border-2 border-blue-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label="Open navigation" aria-expanded="false">
+                        <svg class="w-7 h-7 text-blue-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                    <ul id="nav-menu" class="hidden sm:flex flex-col sm:flex-row gap-2 sm:gap-6 text-base font-semibold sm:items-center bg-white/95 sm:bg-transparent absolute sm:static left-0 right-0 top-[70px] sm:top-auto mt-2 sm:mt-0 shadow sm:shadow-none p-3 sm:p-0 border-b sm:border-0 z-40" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif; min-width: 0;">
+                        <li><a href="#about-heading" class="block py-2 sm:py-0 relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">About</a></li>
+                        <li><a href="#aws-arch-heading" class="block py-2 sm:py-0 relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">AWS Setup</a></li>
+                        <li><a href="#projects-heading" class="block py-2 sm:py-0 relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Projects</a></li>
+                        <li><a href="#skills-heading" class="block py-2 sm:py-0 relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Skills</a></li>
+                        <li><a href="#cta-heading" class="block py-2 sm:py-0 relative px-1 text-blue-800 hover:text-emerald-700 focus:text-emerald-700 transition after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 hover:after:scale-x-100 focus:after:scale-x-100 after:transition-transform after:origin-left">Contact</a></li>
+                    </ul>
             </nav>
+            <script>
+                // Mobile nav toggle
+                document.addEventListener('DOMContentLoaded', function() {
+                  const navToggle = document.getElementById('nav-toggle');
+                  const navMenu = document.getElementById('nav-menu');
+                  if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', function() {
+                      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+                      navToggle.setAttribute('aria-expanded', !expanded);
+                      navMenu.classList.toggle('hidden');
+                    });
+                  }
+                });
+            </script>
         </header>
 
         <main id="main-content" class="w-full max-w-3xl mx-auto" aria-label="Main content">
@@ -94,6 +110,38 @@
                     <li>Data analysis and visualization</li>
                     <li>Web and mobile app development</li>
                 </ul>
+            </section>
+
+            <!-- Accessibility Commitment Section -->
+            <section class="mb-10 bg-white/90 rounded-2xl shadow p-6 border border-pink-200" aria-labelledby="accessibility-heading">
+                <h2 id="accessibility-heading" class="text-2xl font-bold mb-3 text-pink-700 flex items-center gap-2">
+                    <span aria-hidden="true" class="text-lg">🦾</span> Accessibility Commitment
+                </h2>
+                <p class="text-base text-gray-800 mb-3">
+                    <strong>Accessibility-first by design:</strong> This site is <span class="text-blue-800 font-semibold">WCAG 2.2 AAA compliant at launch</span>. As functionality and visual complexity increase, accessibility requirements remain non-negotiable and are treated as architectural constraints, not optional enhancements.
+                </p>
+                <details class="mb-2">
+                    <summary class="cursor-pointer text-blue-700 font-semibold">What the data says <span aria-hidden="true">📊</span></summary>
+                    <div class="mt-2 text-sm text-gray-700">
+                        <p class="mb-2"><strong>Global accessibility testing results:</strong></p>
+                        <ul class="list-disc list-inside mb-2">
+                            <li><strong>WCAG Level A</strong> compliance is rare — many sites fail even basic checks</li>
+                            <li><strong>WCAG Level AA</strong> compliance is very rare</li>
+                            <li><strong>WCAG Level AAA</strong> compliance is extremely rare</li>
+                        </ul>
+                        <table class="w-full text-left border-collapse mb-2">
+                            <thead>
+                                <tr><th class="pr-4 py-1 font-semibold">Level</th><th class="py-1 font-semibold">Approx. % of Sites Meeting Standard</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="pr-4 py-1">WCAG A</td><td class="py-1">~5–10% of top sites</td></tr>
+                                <tr><td class="pr-4 py-1">WCAG AA</td><td class="py-1">~1–5% of top sites</td></tr>
+                                <tr><td class="pr-4 py-1">WCAG AAA</td><td class="py-1">&lt;1% (often ~0.1% or less)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="italic">AAA compliance is almost unheard of on the open web.</p>
+                    </div>
+                </details>
             </section>
 
             <!-- Skills & Value Section -->
