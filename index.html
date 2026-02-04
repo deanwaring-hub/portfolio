@@ -15,15 +15,62 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+        <!-- Atkinson Hyperlegible font from Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <link rel="stylesheet" href="css/styles.css">
 
     </head>
 
-    <body>
+    <body class="bg-gradient-to-br from-blue-50 via-white to-emerald-50 text-gray-900 font-sans min-h-screen flex flex-col items-center justify-center p-0 sm:p-4" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
+        <main class="w-full max-w-3xl mx-auto" aria-label="Main content">
+            <!-- Hero Section -->
+            <section class="relative bg-white/80 rounded-3xl shadow-xl px-6 py-12 mb-10 mt-8 sm:mt-16 flex flex-col items-center border border-gray-200">
+                <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-tr from-blue-400 to-emerald-400 rounded-full shadow-lg flex items-center justify-center border-4 border-white" aria-hidden="true">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </div>
+                <header class="text-center mt-12">
+                    <h1 class="text-5xl font-extrabold mb-3 tracking-tight text-gray-900 drop-shadow-sm">Dean Waring</h1>
+                    <p class="text-xl text-gray-700 font-medium mb-2">Aspiring AWS Certified Professional</p>
+                    <p class="text-base text-gray-600">Data Analysis &bull; Web & App Development</p>
+                </header>
+                <div class="mt-8 text-center">
+                    <a href="#projects" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all text-lg" style="font-family: 'Atkinson Hyperlegible', Arial, sans-serif;">View Projects</a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="mb-10 bg-white/90 rounded-2xl shadow p-6 border border-gray-100" aria-labelledby="about-heading">
+                <h2 id="about-heading" class="text-2xl font-bold mb-3 text-blue-800">About This Portfolio</h2>
+                <p class="text-base text-gray-800 leading-relaxed">
+                    Welcome! This site will showcase my journey through AWS certifications, data analysis, and web/app development projects. I am currently preparing for the AWS Cloud Practitioner Exam and plan to achieve all AWS certifications. Accessibility and clarity are my top priorities.
+                </p>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-10 bg-white/90 rounded-2xl shadow p-6 border border-gray-100" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="text-2xl font-bold mb-3 text-emerald-800">Projects (Coming Soon)</h2>
+                <ul class="list-disc list-inside text-base text-gray-800 space-y-1">
+                    <li>Cloud-based solutions on AWS</li>
+                    <li>Data analysis and visualization</li>
+                    <li>Web and mobile app development</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="mt-12 text-center text-xs text-gray-500" aria-label="Footer">
+            &copy; 2026 Dean Waring. Built with accessibility in mind (WCAG 2.2 AAA).<br>
+            <span class="inline-block mt-2">Font: Atkinson Hyperlegible | Hosted on AWS</span>
+        </footer>
+
         <script src="js/script.js" async defer></script>
     </body>
 </html>
